@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>term 2 calculator</h1>
+        <form>
+          <div class="form__group field">
+            <input type="number" class="form__field" placeholder="Name" name="name" id='term-one' min="0" max="40" required />
+            <label for="term-one" class="form__label">term 1 marks</label>
+          </div>
+          <div class="theory">
+            <input type="number" class="form__field" placeholder="Name" name="name" id='total' min="0" max="80" required />
+            <label for="total" class="form__label">total theory marks</label>
+          </div>
+          <div id="output"></div>
+          <button type="submit">
+            Calculate <img src="arrow.png">
+          </button>
+          
+        </form>
+        
+        <script src="script.js" async defer></script>
+      </body>
+      
+</html>
