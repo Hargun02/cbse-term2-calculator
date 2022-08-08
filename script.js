@@ -19,6 +19,9 @@ document.forms[0].addEventListener('submit', (event) => {
         break;
       }
     };
-  
-    document.querySelector('#output').innerHTML = `your term 2 marks are ${term2}.` //add whatever text seems suitable to wrap value.
+    let output = `your term 2 marks are ${term2}.`
+    if(!term2) {
+      output = 'invalid combination of marks'
+    }
+    document.querySelector('#output').innerHTML = output;
   }
